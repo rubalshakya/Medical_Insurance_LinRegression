@@ -3,7 +3,7 @@ from project_app.utils import MedicalInsurance
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/",methods=["post","get"])
 def base():
     return render_template("home.html")
 
